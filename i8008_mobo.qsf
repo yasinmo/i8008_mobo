@@ -1,0 +1,170 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 15:48:05  February 07, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		i8008_mobo_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY i8008_mobo
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:48:05  FEBRUARY 07, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name VHDL_FILE i8008_mobo.vhd
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_Y2 -to clk_50
+set_location_assignment PIN_AE25 -to data[0]
+set_location_assignment PIN_AD25 -to data[1]
+set_location_assignment PIN_AD22 -to data[2]
+set_location_assignment PIN_AF21 -to data[3]
+set_location_assignment PIN_AC22 -to data[4]
+set_location_assignment PIN_AE21 -to data[5]
+set_location_assignment PIN_AF15 -to data[6]
+set_location_assignment PIN_AF16 -to data[7]
+set_location_assignment PIN_AE15 -to interrupt
+set_location_assignment PIN_Y16 -to phi1
+set_location_assignment PIN_Y17 -to phi2
+set_location_assignment PIN_AE16 -to ready
+set_location_assignment PIN_AG23 -to s[0]
+set_location_assignment PIN_AF26 -to s[1]
+set_location_assignment PIN_AE24 -to s[2]
+set_location_assignment PIN_AH26 -to sync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk_50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to interrupt
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to phi1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to phi2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ready
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to s[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to s[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to s[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sync
+set_location_assignment PIN_E21 -to ledg[0]
+set_location_assignment PIN_E22 -to ledg[1]
+set_location_assignment PIN_E25 -to ledg[2]
+set_location_assignment PIN_E24 -to ledg[3]
+set_location_assignment PIN_H21 -to ledg[4]
+set_location_assignment PIN_G20 -to ledg[5]
+set_location_assignment PIN_G22 -to ledg[6]
+set_location_assignment PIN_G21 -to ledg[7]
+set_global_assignment -name MIF_FILE rom.mif
+set_location_assignment PIN_G19 -to ledr[0]
+set_location_assignment PIN_F19 -to ledr[1]
+set_location_assignment PIN_E19 -to ledr[2]
+set_location_assignment PIN_F21 -to ledr[3]
+set_location_assignment PIN_F18 -to ledr[4]
+set_location_assignment PIN_E18 -to ledr[5]
+set_location_assignment PIN_J19 -to ledr[6]
+set_location_assignment PIN_H19 -to ledr[7]
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_1993
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE testbench_i8008_mobo.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_M23 -to key_n[0]
+set_location_assignment PIN_M21 -to key_n[1]
+set_location_assignment PIN_N21 -to key_n[2]
+set_location_assignment PIN_R24 -to key_n[3]
+set_location_assignment PIN_G13 -to vga_hsync
+set_location_assignment PIN_C13 -to vga_vsync
+set_location_assignment PIN_G10 -to vga_r[0]
+set_location_assignment PIN_J12 -to vga_r[1]
+set_location_assignment PIN_H8 -to vga_r[2]
+set_location_assignment PIN_H10 -to vga_r[3]
+set_location_assignment PIN_A11 -to vga_b[0]
+set_location_assignment PIN_C12 -to vga_b[1]
+set_location_assignment PIN_D11 -to vga_b[2]
+set_location_assignment PIN_D12 -to vga_b[3]
+set_location_assignment PIN_C8 -to vga_g[0]
+set_location_assignment PIN_B8 -to vga_g[1]
+set_location_assignment PIN_F10 -to vga_g[2]
+set_location_assignment PIN_C9 -to vga_g[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to key_n[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to key_n[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to key_n[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to key_n[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledg[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ledr[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_b[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_b[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_b[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_b[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_g[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_g[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_g[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_g[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_hsync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_r[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_r[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_r[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_r[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_vsync
+set_location_assignment PIN_F11 -to vga_blank_n
+set_location_assignment PIN_A12 -to vga_clk
+set_location_assignment PIN_C10 -to vga_sync_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_blank_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_sync_n
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
