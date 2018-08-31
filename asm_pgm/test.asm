@@ -1,5 +1,6 @@
 ;Test Program for i8008_mobo
 ;By Yasin Morsli
+;compile with asm8 (https://github.com/yasinmo/asm8)
 ;----------------------------------------
 .include "defines_macros.asm"
 ;----------------------------------------
